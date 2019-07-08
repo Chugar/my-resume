@@ -1,0 +1,134 @@
+@charset "UTF-8";
+* {
+  font-family: "Montserrat", sans-serif; }
+
+#resume-navbar {
+  background-color: #00bcd4;
+  border-bottom: 1px solid rgb0a(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-size: 1rem;
+  height: 80px; }
+  #resume-navbar li {
+    padding: 0 15px; }
+    #resume-navbar li a {
+      font-family: "Montserrat", sans-serif;
+      font-weight: normal;
+      color: #fefefe;
+      cursor: pointer; }
+
+#resume-about {
+  background-color: #fbfcfc;
+  min-height: 500px;
+  padding: 50px 30px;
+  position: relative;
+  border-bottom: 1px solid #e7eded; }
+  #resume-about:before {
+    color: #f2f5f5;
+    content: "Future dev";
+    font-size: 7rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    text-transform: capitalize; }
+  #resume-about header {
+    margin: 50px 0 0 0;
+    padding: 20px 0; }
+    #resume-about header h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: capitalize; }
+    #resume-about header img {
+      width: 100px;
+      border-radius: 50%;
+      display: inline-block; }
+    #resume-about header .typing-area {
+      display: inline-block;
+      position: relative;
+      margin-left: 30px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      vertical-align: middle; }
+      #resume-about header .typing-area .typing-effect {
+        width: 1px;
+        height: 80%; }
+        #resume-about header .typing-area .typing-effect::after {
+          content: ".";
+          color: #fbfcfc;
+          position: absolute;
+          border-right: 3px solid #000000;
+          animation: blink 250ms infinite ease; }
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  #resume-about .about-area {
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: justify;
+    position: relative; }
+    #resume-about .about-area:before {
+      color: #cfdbdb;
+      content: "“";
+      font-size: 28px;
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      top: -5px;
+      left: -25px; }
+    #resume-about .about-area:after {
+      color: #cfdbdb;
+      content: "“";
+      font-size: 28px;
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      right: -5px; }
+
+#resume-skills {
+  padding: 25px; }
+  #resume-skills h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif; }
+  #resume-skills .skills-list {
+    position: relative;
+    padding: 25px 0; }
+    #resume-skills .skills-list:before {
+      content: "";
+      width: 2px;
+      height: 100%;
+      background: #c5c5c5;
+      position: absolute; }
+    #resume-skills .skills-list li {
+      list-style: none;
+      box-sizing: border-box;
+      position: relative; }
+      #resume-skills .skills-list li:before {
+        background-color: #00bcd4;
+        border-radius: 50%;
+        box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.3);
+        content: "";
+        height: 16px;
+        width: 16px;
+        position: absolute;
+        left: -7px;
+        top: 25px; }
+      #resume-skills .skills-list li div.skills-content {
+        margin: 0 0 35px 25px; }
+        #resume-skills .skills-list li div.skills-content .skills-logo {
+          border: 1px solid #d5dbdb;
+          border-radius: 50%;
+          display: inline-block;
+          margin: 0 20px 0 0;
+          text-align: center;
+          width: 3rem;
+          height: 3rem; }
+          #resume-skills .skills-list li div.skills-content .skills-logo i {
+            font-size: 2rem;
+            line-height: 3rem;
+            vertical-align: middle; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,34 @@
+html(lang="en")
+    
+    head
+        //- Metas
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        //- Bootstrap
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+
+        //- Google Fonts
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap")
+
+        //- Font awesome
+        script(src="https://kit.fontawesome.com/5f876598f4.js")
+
+        //- CSS
+        link(rel="stylesheet", href="main.css")
+
+        //- Javascript
+        script(src="./app/scripts/main.js" defer)
+
+        //- Title
+        title This is it
+        
+    body
+        include app/templates/navbar.pug
+
+        div(class="fluid-container")
+            include app/templates/about.pug
+
+            include app/templates/skills.pug
+        

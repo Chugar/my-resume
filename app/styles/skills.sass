@@ -1,0 +1,54 @@
+#resume-skills
+    padding: 25px 
+
+    h2 
+        font-size: 2rem
+        font-weight: bold
+        font-family: $font-stack
+
+    .skills-list
+        position: relative
+        padding: 25px 0  
+        &:before
+            content: ''
+            width: 2px
+            height: 100%
+            background: #c5c5c5
+            position: absolute
+
+        li 
+            list-style: none
+            box-sizing: border-box
+            position: relative
+            &:before
+                background-color: $primary-color
+                border-radius: 50%
+                box-shadow: 0 0 0 3px transparentize($primary-color, 0.70)
+                content: ''
+                height: 16px
+                width: 16px
+                position: absolute
+                left: -7px
+                top: 25px
+
+            div.skills-content
+                margin: 0 0 35px 25px
+
+                .skills-logo
+                    border: 1px solid #d5dbdb 
+                    border-radius: 50%
+                    display: inline-block
+                    margin: 0 20px 0 0
+                    text-align: center
+                    width: 3rem
+                    height: 3rem
+                    // box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1)                   
+                    i 
+                        font-size: 2rem
+                        line-height: 3rem
+                        vertical-align: middle
+
+
+
+
+
