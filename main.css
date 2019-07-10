@@ -2,6 +2,11 @@
 * {
   font-family: "Montserrat", sans-serif; }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
 #resume-navbar {
   background-color: #00bcd4;
   border-bottom: 1px solid rgb0a(0, 0, 0, 0.6);
@@ -88,25 +93,30 @@
       right: -5px; }
 
 #resume-skills {
-  padding: 25px; }
+  padding: 25px 0 0 0; }
   #resume-skills h2 {
     font-size: 2rem;
     font-weight: bold;
     font-family: "Montserrat", sans-serif; }
-  #resume-skills .skills-list {
+  #resume-skills h3 {
+    margin: 0;
+    padding: 0; }
+  #resume-skills ul.skills-list {
     position: relative;
-    padding: 25px 0; }
-    #resume-skills .skills-list:before {
+    padding: 15px 0 0 0;
+    margin: 0 0 100px 0; }
+    #resume-skills ul.skills-list:before {
       content: "";
       width: 2px;
       height: 100%;
       background: #c5c5c5;
       position: absolute; }
-    #resume-skills .skills-list li {
+    #resume-skills ul.skills-list li {
       list-style: none;
       box-sizing: border-box;
-      position: relative; }
-      #resume-skills .skills-list li:before {
+      position: relative;
+      margin: 0 0 30px 0; }
+      #resume-skills ul.skills-list li:before {
         background-color: #00bcd4;
         border-radius: 50%;
         box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.3);
@@ -116,19 +126,15 @@
         position: absolute;
         left: -7px;
         top: 25px; }
-      #resume-skills .skills-list li div.skills-content {
-        margin: 0 0 35px 25px; }
-        #resume-skills .skills-list li div.skills-content .skills-logo {
-          border: 1px solid #d5dbdb;
-          border-radius: 50%;
+      #resume-skills ul.skills-list li div.skills-content {
+        margin: 0 0 0 25px; }
+        #resume-skills ul.skills-list li div.skills-content .skills-logo {
           display: inline-block;
-          margin: 0 20px 0 0;
-          text-align: center;
           width: 3rem;
           height: 3rem; }
-          #resume-skills .skills-list li div.skills-content .skills-logo i {
-            font-size: 2rem;
-            line-height: 3rem;
-            vertical-align: middle; }
+          #resume-skills ul.skills-list li div.skills-content .skills-logo svg {
+            display: inline-block;
+            width: 150px;
+            height: 100%; }
 
 /*# sourceMappingURL=main.css.map */

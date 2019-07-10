@@ -1,0 +1,7 @@
+Todo list:
+- Rassembler tous les svg (done)
+- Faire les trees front, back, et outils en svg (done)
+- Remplacer le svg de html par un svg html css (done)
+- Distinguer les trois parties front/back/devtools
+- Corriger le décalage à droite
+- passer en col-md-8
