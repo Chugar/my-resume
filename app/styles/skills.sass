@@ -1,3 +1,5 @@
+$font-color-1: #495057
+
 #resume-skills
     padding: 25px 0 0 0
 
@@ -15,6 +17,7 @@
         padding: 15px 0 0 0
         margin: 0 0 100px 0
 
+        // Timeline line
         &:before
             content: ''
             width: 2px
@@ -22,13 +25,13 @@
             background: #c5c5c5
             position: absolute
 
-        li 
+        > li 
             list-style: none
             box-sizing: border-box
             position: relative
             margin: 0 0 30px 0
             
-            // Ball indicator (puce)
+            // Timeline ball (indicatior)
             &:before
                 background-color: $primary-color
                 border-radius: 50%
@@ -52,6 +55,21 @@
                         display: inline-block
                         width: 150px
                         height: 100%
+
+                .skills-desc
+                    margin: 15px 0 0 0
+
+                    ul 
+                        list-style: none
+                        font-weight: bold
+                        font-size: 0.85rem
+                        font-family: $font-stack
+                        color: $font-color-1
+                        > li:before 
+                            content: '+ '
+                            font-weight: normal
+                            color: lighten($font-color-1, 50%)
+
 
 
 

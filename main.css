@@ -111,12 +111,12 @@ body, html {
       height: 100%;
       background: #c5c5c5;
       position: absolute; }
-    #resume-skills ul.skills-list li {
+    #resume-skills ul.skills-list > li {
       list-style: none;
       box-sizing: border-box;
       position: relative;
       margin: 0 0 30px 0; }
-      #resume-skills ul.skills-list li:before {
+      #resume-skills ul.skills-list > li:before {
         background-color: #00bcd4;
         border-radius: 50%;
         box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.3);
@@ -126,15 +126,27 @@ body, html {
         position: absolute;
         left: -7px;
         top: 25px; }
-      #resume-skills ul.skills-list li div.skills-content {
+      #resume-skills ul.skills-list > li div.skills-content {
         margin: 0 0 0 25px; }
-        #resume-skills ul.skills-list li div.skills-content .skills-logo {
+        #resume-skills ul.skills-list > li div.skills-content .skills-logo {
           display: inline-block;
           width: 3rem;
           height: 3rem; }
-          #resume-skills ul.skills-list li div.skills-content .skills-logo svg {
+          #resume-skills ul.skills-list > li div.skills-content .skills-logo svg {
             display: inline-block;
             width: 150px;
             height: 100%; }
+        #resume-skills ul.skills-list > li div.skills-content .skills-desc {
+          margin: 15px 0 0 0; }
+          #resume-skills ul.skills-list > li div.skills-content .skills-desc ul {
+            list-style: none;
+            font-weight: bold;
+            font-size: 0.85rem;
+            font-family: "Montserrat", sans-serif;
+            color: #495057; }
+            #resume-skills ul.skills-list > li div.skills-content .skills-desc ul > li:before {
+              content: "+ ";
+              font-weight: normal;
+              color: #cbd0d4; }
 
 /*# sourceMappingURL=main.css.map */
