@@ -8,13 +8,14 @@ body, html {
   width: 100%; }
 
 #resume-navbar {
-  background-color: #00bcd4;
+  background: linear-gradient(to right, #00bcd4, #22e6ff);
   border-bottom: 1px solid rgb0a(0, 0, 0, 0.6);
   font-weight: bold;
   font-size: 1rem;
   height: 80px; }
   #resume-navbar li {
-    padding: 0 15px; }
+    padding: 0 15px;
+    text-transform: capitalize; }
     #resume-navbar li a {
       font-family: "Montserrat", sans-serif;
       font-weight: normal;
@@ -23,6 +24,7 @@ body, html {
 
 #resume-about {
   background-color: #fbfcfc;
+  color: #0F2B46;
   min-height: 500px;
   padding: 50px 30px;
   position: relative;
@@ -35,7 +37,8 @@ body, html {
     position: absolute;
     top: 0;
     left: 25%;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    text-shadow: -1px 0 #e7eded, 0 1px #e7eded, 1px 0 #e7eded, 0 -1px #e7eded; }
   #resume-about header {
     margin: 50px 0 0 0;
     padding: 20px 0; }
@@ -93,18 +96,27 @@ body, html {
       right: -5px; }
 
 #resume-skills {
-  padding: 25px 0 0 0; }
+  padding: 25px 0 0 0;
+  width: 100%; }
   #resume-skills h2 {
+    color: #0F2B46;
     font-size: 2rem;
     font-weight: bold;
     font-family: "Montserrat", sans-serif; }
   #resume-skills h3 {
-    margin: 0;
+    color: #0F2B46;
+    margin: 0 0 0 -25px;
     padding: 0; }
+    #resume-skills h3 i {
+      color: #f5f5f5;
+      font-size: 1.5rem;
+      margin-right: 10px;
+      display: inline-block; }
   #resume-skills ul.skills-list {
     position: relative;
     padding: 15px 0 0 0;
-    margin: 0 0 100px 0; }
+    margin: 0 0 100px 0;
+    width: 100%; }
     #resume-skills ul.skills-list:before {
       content: "";
       width: 2px;
@@ -139,14 +151,15 @@ body, html {
         #resume-skills ul.skills-list > li div.skills-content .skills-desc {
           margin: 15px 0 0 0; }
           #resume-skills ul.skills-list > li div.skills-content .skills-desc ul {
-            list-style: none;
-            font-weight: bold;
-            font-size: 0.85rem;
+            color: #495057;
             font-family: "Montserrat", sans-serif;
-            color: #495057; }
+            font-size: 0.85rem;
+            font-weight: 500;
+            list-style: none;
+            margin: 0 0 0 -20px; }
             #resume-skills ul.skills-list > li div.skills-content .skills-desc ul > li:before {
               content: "+ ";
               font-weight: normal;
-              color: #cbd0d4; }
+              color: #73abe1; }
 
 /*# sourceMappingURL=main.css.map */

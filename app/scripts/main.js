@@ -26,5 +26,5 @@ const texts = [
         pos++;
     }
 
-    setTimeout(type, 150);
+    setTimeout(type, 100);
 })();

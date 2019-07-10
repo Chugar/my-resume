@@ -1,5 +1,6 @@
+$gradient-color: lighten($primary-color, 15%)
 #resume-navbar
-    background-color: $primary-color
+    background: linear-gradient(to right, $primary-color, $gradient-color)
     border-bottom: 1px solid rgb0a(0, 0, 0, 0.6 )
     font-weight: bold 
     font-size: 1rem
@@ -7,7 +8,8 @@
 
     li 
         padding: 0 15px
-
+        text-transform: capitalize
+        
         a 
             font-family: $font-stack
             font-weight: normal
