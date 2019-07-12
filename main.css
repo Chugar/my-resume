@@ -2,6 +2,9 @@
 * {
   font-family: "Montserrat", sans-serif; }
 
+html {
+  scroll-behavior: smooth; }
+
 body, html {
   margin: 0;
   padding: 0;
@@ -161,5 +164,18 @@ body, html {
               content: "+ ";
               font-weight: normal;
               color: #73abe1; }
+
+button#scrolltop-button {
+  background: #00bcd4;
+  border: none;
+  border-radius: 50%;
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px; }
 
 /*# sourceMappingURL=main.css.map */
