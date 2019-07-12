@@ -3,7 +3,14 @@ Todo list:
 - Faire les trees front, back, et outils en svg (done)
 - Remplacer le svg de html par un svg html css (done)
 - Distinguer les trois parties front/back/devtools (done)
-- Trouver une manière de display les skills 
-- Corriger le décalage à droite
-- Ajouter la flèche de scroll-up
-- Ajouter un progressive scroll down on navbar click
+- Trouver une manière de display les skills (done)
+- Corriger le décalage à droite (done)
+- Ajouter la flèche de scroll-up (done)
+- Ajouter un progressive scroll down on navbar click (done)
+- Faire le footer
+- Refaire les textes des skills
+
+
+Improve:
+- Faire le smooth scroll avec JS et le comprendre
+- Bien comprendre la border sur fonts

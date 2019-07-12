@@ -1,4 +1,3 @@
-
 /**
 * Typing effect 
 */
