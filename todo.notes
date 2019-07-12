@@ -7,10 +7,11 @@ Todo list:
 - Corriger le décalage à droite (done)
 - Ajouter la flèche de scroll-up (done)
 - Ajouter un progressive scroll down on navbar click (done)
-- Faire le footer
+- Faire le footer (done)
 - Refaire les textes des skills
 
 
 Improve:
 - Faire le smooth scroll avec JS et le comprendre
 - Bien comprendre la border sur fonts
+- Ajouter des liens au footer en reglant le promblème du z-index
