@@ -4,24 +4,30 @@ footer(id="resume-footer")
 
         div(class="col-md-4 footers-card")
             h3 coordonnées
-            address  
-                p  
-                    i(class="fas fa-phone-alt")
-                    | 06 52 90 63 21
-
-                p  
-                    i(class="far fa-envelope")
-                    | c.berkane@hotmail.fr 
-                
-                br
-                p 
-                    i(class="fas fa-location")
-                    | 5 rue Laurent Bonnevay 
-                p 54100 Nancy
             
+            address  
+                p.skip-line
+                    i(class="fas fa-phone")
+                    a(href="tel:+33652906321") 06 52 90 63 21
 
-        div(class="col-md-4 footers-card")
+                p.skip-line 
+                    i(class="fas fa-envelope")
+                    a(href="mailto:c.berkane@hotmail.fr") c.berkane@hotmail.fr 
+
+                p   
+                    i(class="fa fa-map-marker-alt")
+                    |5 rue Laurent Bonnevay 
+                p 54100 Nancy
+                p Mobile en France
+
+        div(class="col-md-4 footers-card px-5")
             h3 Credits
+
+            p.skip-line.text-center La plupart des icones utilisées sont disponibles sur 
+                a(href="https://www.flaticon.com/" target="_blank") Flaticon.com 
+            
+            p.text-center Le reste est également disponibles sur 
+                a(href="https://worldvectorlogo.com/" target="_blank") World Vector Logo 
     
     div(class="footers-footer")
         | This webpage was made with Pug, SASS and some Vanilla JS

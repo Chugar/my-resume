@@ -1,14 +1,10 @@
 Todo list:
-- Rassembler tous les svg (done)
-- Faire les trees front, back, et outils en svg (done)
-- Remplacer le svg de html par un svg html css (done)
-- Distinguer les trois parties front/back/devtools (done)
-- Trouver une manière de display les skills (done)
-- Corriger le décalage à droite (done)
-- Ajouter la flèche de scroll-up (done)
-- Ajouter un progressive scroll down on navbar click (done)
-- Faire le footer (done)
-- Refaire les textes des skills
+- Styliser le footer (done)
+- Faire les textes de la section soft-skills
+- Ajouter une ombre légère au boutton de scroll up
+- Ajouter un effet de hover a la navbar
+- Améliorer les links de la navbar
+- Prévoir une version mobile
 
 
 Improve:
