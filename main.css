@@ -164,6 +164,11 @@ body, html {
               content: "+ ";
               font-weight: normal;
               color: #73abe1; }
+          #resume-skills ul.skills-list > li div.skills-content .skills-desc p {
+            color: #495057;
+            font-size: 0.8rem;
+            line-height: 1rem;
+            text-align: justify; }
 
 .invert {
   -webkit-transform: scaleX(-1);
