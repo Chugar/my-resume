@@ -8,6 +8,7 @@ $bg-color:  #fbfcfc
     position: relative
     border-bottom: 1px solid darken($bg-color, 7%)
 
+    // Background text
     &:before
         color: darken($bg-color, 3%)
         content: "Future dev"
@@ -19,6 +20,8 @@ $bg-color:  #fbfcfc
         text-transform: capitalize
         text-shadow: -1px 0 darken($bg-color, 7%), 0 1px darken($bg-color, 7%), 1px 0 darken($bg-color, 7%), 0 -1px darken($bg-color, 7%)
 
+
+    // Header (title + image + typing effect text)
     header
         margin: 50px 0 0 0
         padding: 20px 0 
@@ -59,6 +62,7 @@ $bg-color:  #fbfcfc
                     100%
                         opacity: 1
                 
+    // Text area
     .about-area
         font-size: 1rem
         margin-top: 20px
@@ -84,3 +88,36 @@ $bg-color:  #fbfcfc
             width: 25px
             position: absolute
             right: -5px
+
+
+// SMALL SCREENS
+@media (max-width: $bp-sm)
+    #resume-about
+        padding: 35px 40px
+
+        &:before
+            font-size: 3.3rem
+            left: 0
+            text-align: center
+            width: 100%
+
+        header
+            display: flex
+            flex-flow: row wrap
+
+            > h2
+                order: 2
+                font-size: 1.2rem
+                text-align: center
+                margin: 15px 0 0 0
+
+                
+            > img
+                order: 1
+                margin: 0 auto
+                width: 180px
+
+            > div.typing-area
+                margin: 40px 0 0 0
+                order: 3
+                font-size: 1rem

@@ -1,11 +1,10 @@
 Todo list:
-- Styliser le footer (done)
-- Faire les textes de la section soft-skills
+- Prévoir une version mobile (done)
+- Ajouter un hover au footer
 - Ajouter une ombre légère au boutton de scroll up
 - Ajouter un effet de hover a la navbar
 - Améliorer les links de la navbar
-- Prévoir une version mobile
-
+- Refaire le footers footer
 
 Improve:
 - Faire le smooth scroll avec JS et le comprendre

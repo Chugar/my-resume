@@ -20,6 +20,7 @@
             display: inline-block
 
 
+    // List of skills
     ul.skills-list
         position: relative
         padding: 15px 0 0 0
@@ -56,6 +57,7 @@
             div.skills-content
                 margin: 0 0 0 25px
                 
+                // SVG Container
                 .skills-logo
                     display: inline-block
                     width: 3rem
@@ -86,10 +88,7 @@
                         font-size: 0.8rem
                         line-height: 1rem
                         text-align: justify
-
-                        
-
-
+                     
 
 // SVG Classes
 .invert 
@@ -102,3 +101,54 @@
 
 .fill-brain
     fill: #34495e
+
+
+
+// SMALL SCREENS
+@media (max-width: $bp-sm)
+    #resume-skills
+        padding: 25px 40px
+
+        h2 
+            font-size: 1.2rem
+            text-align: center
+            margin:  0 0 40px 0
+
+        h3 
+            font-size: 1rem
+
+            i 
+                font-size: 1rem
+
+        // List of skills
+        ul.skills-list
+            padding: 0
+
+            > li 
+                margin: 25px 0 40px 0
+                padding: 0 
+
+                div.skills-content    
+                    margin: 0
+                    padding: 0
+
+                    svg
+                        width: 60px
+                        height: 100%
+
+                .skills-desc
+                    margin: 0
+                    font-size: 1rem
+
+        // Soft skills list
+        ul.soft-skills
+            > li
+                .skills-desc
+                    margin: 0
+                    padding: 0 25px
+
+                    h4 
+                        font-size: 1.2rem
+
+
+

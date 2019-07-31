@@ -24,6 +24,10 @@ body, html {
       font-weight: normal;
       color: #fefefe;
       cursor: pointer; }
+      #resume-navbar li a small {
+        color: #fefefe;
+        text-transform: lowercase;
+        font-size: 0.5rem; }
 
 #resume-about {
   background-color: #fbfcfc;
@@ -98,6 +102,30 @@ body, html {
       position: absolute;
       right: -5px; }
 
+@media (max-width: 576px) {
+  #resume-about {
+    padding: 35px 40px; }
+    #resume-about:before {
+      font-size: 3.3rem;
+      left: 0;
+      text-align: center;
+      width: 100%; }
+    #resume-about header {
+      display: flex;
+      flex-flow: row wrap; }
+      #resume-about header > h2 {
+        order: 2;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 15px 0 0 0; }
+      #resume-about header > img {
+        order: 1;
+        margin: 0 auto;
+        width: 180px; }
+      #resume-about header > div.typing-area {
+        margin: 40px 0 0 0;
+        order: 3;
+        font-size: 1rem; } }
 #resume-skills {
   padding: 25px 0 0 0;
   width: 100%; }
@@ -180,6 +208,36 @@ body, html {
 .fill-brain {
   fill: #34495e; }
 
+@media (max-width: 576px) {
+  #resume-skills {
+    padding: 25px 40px; }
+    #resume-skills h2 {
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 0 0 40px 0; }
+    #resume-skills h3 {
+      font-size: 1rem; }
+      #resume-skills h3 i {
+        font-size: 1rem; }
+    #resume-skills ul.skills-list {
+      padding: 0; }
+      #resume-skills ul.skills-list > li {
+        margin: 25px 0 40px 0;
+        padding: 0; }
+        #resume-skills ul.skills-list > li div.skills-content {
+          margin: 0;
+          padding: 0; }
+          #resume-skills ul.skills-list > li div.skills-content svg {
+            width: 60px;
+            height: 100%; }
+        #resume-skills ul.skills-list > li .skills-desc {
+          margin: 0;
+          font-size: 1rem; }
+    #resume-skills ul.soft-skills > li .skills-desc {
+      margin: 0;
+      padding: 0 25px; }
+      #resume-skills ul.soft-skills > li .skills-desc h4 {
+        font-size: 1.2rem; } }
 button#scrolltop-button {
   background: #00bcd4;
   border: none;
@@ -241,15 +299,14 @@ button#scrolltop-button {
       color: #ffffff; }
       #resume-footer div.footers-card a:hover {
         text-decoration: none; }
-  #resume-footer div.footers-footer {
-    background-color: #00bcd4;
-    color: #f1f1f1;
-    font-size: 0.8rem;
-    margin: 0;
-    padding: 5px;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%; }
+
+@media (max-width: 576px) {
+  #resume-footer {
+    padding: 0 40px; }
+
+  .footers-card {
+    text-align: center; }
+    .footers-card address i {
+      display: none; } }
 
 /*# sourceMappingURL=main.css.map */
