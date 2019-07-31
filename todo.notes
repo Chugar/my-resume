@@ -1,12 +1,9 @@
 Todo list:
-- Prévoir une version mobile (done)
-- Ajouter un hover au footer
-- Ajouter une ombre légère au boutton de scroll up
 - Ajouter un effet de hover a la navbar
 - Améliorer les links de la navbar
-- Refaire le footers footer
+- Nettoyer les assets
+
 
 Improve:
-- Faire le smooth scroll avec JS et le comprendre
-- Bien comprendre la border sur fonts
-- Ajouter des liens au footer en reglant le promblème du z-index
+- Faire le smooth scroll avec JS
+- Comment faire une border sur du texte ?
