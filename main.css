@@ -312,5 +312,17 @@ button#scrolltop-button {
     text-align: center; }
     .footers-card address i {
       display: none; } }
+#footersfoot {
+  background-color: #00bcd4;
+  text-align: center;
+  margin: 0; }
+  #footersfoot p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    vertical-align: middle;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0; }
 
 /*# sourceMappingURL=main.css.map */
