@@ -3,19 +3,19 @@ $bg-color:  #fbfcfc
 #resume-about
     background-color: $bg-color
     color: $font-color-1
-    min-height: 500px
-    padding: 50px 30px
+    min-height: 400px
+    padding: 20px 30px
     position: relative
     border-bottom: 1px solid darken($bg-color, 7%)
 
     // Background text
     &:before
         color: darken($bg-color, 3%)
-        content: "Future dev"
+        content: "Dev Junior"
         font-size: 7rem
         font-weight: bolder
         position: absolute
-        top: 0
+        top: -15px
         left: 25%
         text-transform: capitalize
         text-shadow: -1px 0 darken($bg-color, 7%), 0 1px darken($bg-color, 7%), 1px 0 darken($bg-color, 7%), 0 -1px darken($bg-color, 7%)
@@ -23,18 +23,23 @@ $bg-color:  #fbfcfc
 
     // Header (title + image + typing effect text)
     header
-        margin: 50px 0 0 0
-        padding: 20px 0 
+        margin: 80px 0 0 0
+        padding: 10px 0 
+        position: relative
 
         h2 
             font-size: 2rem
             font-weight: bold
             text-transform: capitalize
+            text-align: center
 
         img 
-            width: 100px
+            width: 130px
             border-radius: 50%
             display: inline-block
+            position: absolute
+            left: 0
+            top: 0
 
         .typing-area
             display: inline-block
@@ -44,6 +49,7 @@ $bg-color:  #fbfcfc
             font-weight: bold
             text-transform: uppercase
             vertical-align: middle
+            margin-left: 150px
 
             .typing-effect
                 width: 1px

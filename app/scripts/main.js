@@ -4,13 +4,10 @@
 
 const typingZone = document.querySelector('.typing-effect');
 const texts = [
-    'Angular', 
-    'VueJS', 
-    'Symfony', 
-    'Les Single Page Apps', 
-    'Les Design Patterns', 
-    'La Programmation Fonctionelle',
-    'Les Tests Unitaires',
+    'Les Single Page App ',
+    'L\'optimisation du DOM',
+    'La sécurité back-end ',
+    'Les méthodo AGILE'
 ];
 
 let letter;

@@ -1,243 +1,307 @@
 @charset "UTF-8";
 * {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 body, html {
   margin: 0;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 #resume-navbar {
   background: linear-gradient(to right, #00bcd4, #22e6ff);
   border-bottom: 1px solid rgb0a(0, 0, 0, 0.6);
   font-weight: bold;
   font-size: 1rem;
-  height: 80px; }
-  #resume-navbar li {
-    padding: 0 15px;
-    text-transform: capitalize; }
-    #resume-navbar li a {
-      font-family: "Montserrat", sans-serif;
-      font-weight: normal;
-      color: #fefefe;
-      cursor: pointer; }
-      #resume-navbar li a small {
-        color: #fefefe;
-        text-transform: lowercase;
-        font-size: 0.5rem; }
+  height: 80px;
+}
+#resume-navbar li {
+  padding: 0 15px;
+  text-transform: capitalize;
+}
+#resume-navbar li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: #fefefe;
+  cursor: pointer;
+}
+#resume-navbar li a small {
+  color: #fefefe;
+  text-transform: lowercase;
+  font-size: 0.5rem;
+}
 
 #resume-about {
   background-color: #fbfcfc;
   color: #0F2B46;
-  min-height: 500px;
-  padding: 50px 30px;
+  min-height: 400px;
+  padding: 20px 30px;
   position: relative;
-  border-bottom: 1px solid #e7eded; }
-  #resume-about:before {
-    color: #f2f5f5;
-    content: "Future dev";
-    font-size: 7rem;
-    font-weight: bolder;
-    position: absolute;
-    top: 0;
-    left: 25%;
-    text-transform: capitalize;
-    text-shadow: -1px 0 #e7eded, 0 1px #e7eded, 1px 0 #e7eded, 0 -1px #e7eded; }
-  #resume-about header {
-    margin: 50px 0 0 0;
-    padding: 20px 0; }
-    #resume-about header h2 {
-      font-size: 2rem;
-      font-weight: bold;
-      text-transform: capitalize; }
-    #resume-about header img {
-      width: 100px;
-      border-radius: 50%;
-      display: inline-block; }
-    #resume-about header .typing-area {
-      display: inline-block;
-      position: relative;
-      margin-left: 30px;
-      font-size: 1.4rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      vertical-align: middle; }
-      #resume-about header .typing-area .typing-effect {
-        width: 1px;
-        height: 80%; }
-        #resume-about header .typing-area .typing-effect::after {
-          content: ".";
-          color: #fbfcfc;
-          position: absolute;
-          border-right: 3px solid #000000;
-          animation: blink 250ms infinite ease; }
+  border-bottom: 1px solid #e7eded;
+}
+#resume-about:before {
+  color: #f2f5f5;
+  content: "Dev Junior";
+  font-size: 7rem;
+  font-weight: bolder;
+  position: absolute;
+  top: -15px;
+  left: 25%;
+  text-transform: capitalize;
+  text-shadow: -1px 0 #e7eded, 0 1px #e7eded, 1px 0 #e7eded, 0 -1px #e7eded;
+}
+#resume-about header {
+  margin: 80px 0 0 0;
+  padding: 10px 0;
+  position: relative;
+}
+#resume-about header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+}
+#resume-about header img {
+  width: 130px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#resume-about header .typing-area {
+  display: inline-block;
+  position: relative;
+  margin-left: 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-left: 150px;
+}
+#resume-about header .typing-area .typing-effect {
+  width: 1px;
+  height: 80%;
+}
+#resume-about header .typing-area .typing-effect::after {
+  content: ".";
+  color: #fbfcfc;
+  position: absolute;
+  border-right: 3px solid #000000;
+  animation: blink 250ms infinite ease;
+}
 @keyframes blink {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
-  #resume-about .about-area {
-    font-size: 1rem;
-    margin-top: 20px;
-    text-align: justify;
-    position: relative; }
-    #resume-about .about-area:before {
-      color: #cfdbdb;
-      content: "“";
-      font-size: 28px;
-      height: 25px;
-      width: 25px;
-      position: absolute;
-      top: -5px;
-      left: -25px; }
-    #resume-about .about-area:after {
-      color: #cfdbdb;
-      content: "“";
-      font-size: 28px;
-      height: 25px;
-      width: 25px;
-      position: absolute;
-      right: -5px; }
+    opacity: 1;
+  }
+}
+#resume-about .about-area {
+  font-size: 1rem;
+  margin-top: 20px;
+  text-align: justify;
+  position: relative;
+}
+#resume-about .about-area:before {
+  color: #cfdbdb;
+  content: "“";
+  font-size: 28px;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: -5px;
+  left: -25px;
+}
+#resume-about .about-area:after {
+  color: #cfdbdb;
+  content: "“";
+  font-size: 28px;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: -5px;
+}
 
 @media (max-width: 576px) {
   #resume-about {
-    padding: 35px 40px; }
-    #resume-about:before {
-      font-size: 3.3rem;
-      left: 0;
-      text-align: center;
-      width: 100%; }
-    #resume-about header {
-      display: flex;
-      flex-flow: row wrap; }
-      #resume-about header > h2 {
-        order: 2;
-        font-size: 1.2rem;
-        text-align: center;
-        margin: 15px 0 0 0; }
-      #resume-about header > img {
-        order: 1;
-        margin: 0 auto;
-        width: 180px; }
-      #resume-about header > div.typing-area {
-        margin: 40px 0 0 0;
-        order: 3;
-        font-size: 1rem; } }
+    padding: 35px 40px;
+  }
+  #resume-about:before {
+    font-size: 3.3rem;
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  #resume-about header {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #resume-about header > h2 {
+    order: 2;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 15px 0 0 0;
+  }
+  #resume-about header > img {
+    order: 1;
+    margin: 0 auto;
+    width: 180px;
+  }
+  #resume-about header > div.typing-area {
+    margin: 40px 0 0 0;
+    order: 3;
+    font-size: 1rem;
+  }
+}
 #resume-skills {
   padding: 25px 0 0 0;
-  width: 100%; }
-  #resume-skills h2 {
-    color: #0F2B46;
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif; }
-  #resume-skills h3 {
-    color: #0F2B46;
-    margin: 0 0 0 -25px;
-    padding: 0; }
-    #resume-skills h3 i {
-      color: #f5f5f5;
-      font-size: 1.5rem;
-      margin-right: 10px;
-      display: inline-block; }
-  #resume-skills ul.skills-list {
-    position: relative;
-    padding: 15px 0 0 0;
-    margin: 0 0 100px 0;
-    width: 100%; }
-    #resume-skills ul.skills-list:before {
-      content: "";
-      width: 2px;
-      height: 100%;
-      background: #c5c5c5;
-      position: absolute; }
-    #resume-skills ul.skills-list > li {
-      list-style: none;
-      box-sizing: border-box;
-      position: relative;
-      margin: 0 0 30px 0; }
-      #resume-skills ul.skills-list > li:before {
-        background-color: #00bcd4;
-        border-radius: 50%;
-        box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.3);
-        content: "";
-        height: 16px;
-        width: 16px;
-        position: absolute;
-        left: -7px;
-        top: 25px; }
-      #resume-skills ul.skills-list > li div.skills-content {
-        margin: 0 0 0 25px; }
-        #resume-skills ul.skills-list > li div.skills-content .skills-logo {
-          display: inline-block;
-          width: 3rem;
-          height: 3rem; }
-          #resume-skills ul.skills-list > li div.skills-content .skills-logo svg {
-            display: inline-block;
-            width: 150px;
-            height: 100%; }
-        #resume-skills ul.skills-list > li div.skills-content .skills-desc {
-          margin: 15px 0 0 0; }
-          #resume-skills ul.skills-list > li div.skills-content .skills-desc ul {
-            color: #495057;
-            font-family: "Montserrat", sans-serif;
-            font-size: 0.85rem;
-            font-weight: 500;
-            list-style: none;
-            margin: 0 0 0 -20px; }
-            #resume-skills ul.skills-list > li div.skills-content .skills-desc ul > li:before {
-              content: "+ ";
-              font-weight: normal;
-              color: #73abe1; }
-          #resume-skills ul.skills-list > li div.skills-content .skills-desc p {
-            color: #495057;
-            font-size: 0.8rem;
-            line-height: 1rem;
-            text-align: justify; }
+  width: 100%;
+}
+#resume-skills h2 {
+  color: #0F2B46;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+#resume-skills h3 {
+  color: #0F2B46;
+  margin: 0 0 0 -25px;
+  padding: 0;
+}
+#resume-skills h3 i {
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  display: inline-block;
+}
+#resume-skills ul.skills-list {
+  position: relative;
+  padding: 15px 0 0 0;
+  margin: 0 0 100px 0;
+  width: 100%;
+}
+#resume-skills ul.skills-list:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #c5c5c5;
+  position: absolute;
+}
+#resume-skills ul.skills-list > li {
+  list-style: none;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 0 30px 0;
+}
+#resume-skills ul.skills-list > li:before {
+  background-color: #00bcd4;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.3);
+  content: "";
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: -7px;
+  top: 25px;
+}
+#resume-skills ul.skills-list > li div.skills-content {
+  margin: 0 0 0 25px;
+}
+#resume-skills ul.skills-list > li div.skills-content .skills-logo {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+}
+#resume-skills ul.skills-list > li div.skills-content .skills-logo svg {
+  display: inline-block;
+  width: 150px;
+  height: 100%;
+}
+#resume-skills ul.skills-list > li div.skills-content .skills-desc {
+  margin: 15px 0 0 0;
+}
+#resume-skills ul.skills-list > li div.skills-content .skills-desc ul {
+  color: #495057;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  list-style: none;
+  margin: 0 0 0 -20px;
+}
+#resume-skills ul.skills-list > li div.skills-content .skills-desc ul > li:before {
+  content: "+ ";
+  font-weight: normal;
+  color: #73abe1;
+}
+#resume-skills ul.skills-list > li div.skills-content .skills-desc p {
+  color: #495057;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: justify;
+}
 
 .invert {
   -webkit-transform: scaleX(-1);
-  transform: scaleX(-1); }
+  transform: scaleX(-1);
+}
 
 .fill-progress {
-  fill: #283593; }
+  fill: #283593;
+}
 
 .fill-brain {
-  fill: #34495e; }
+  fill: #34495e;
+}
 
 @media (max-width: 576px) {
   #resume-skills {
-    padding: 25px 40px; }
-    #resume-skills h2 {
-      font-size: 1.2rem;
-      text-align: center;
-      margin: 0 0 40px 0; }
-    #resume-skills h3 {
-      font-size: 1rem; }
-      #resume-skills h3 i {
-        font-size: 1rem; }
-    #resume-skills ul.skills-list {
-      padding: 0; }
-      #resume-skills ul.skills-list > li {
-        margin: 25px 0 40px 0;
-        padding: 0; }
-        #resume-skills ul.skills-list > li div.skills-content {
-          margin: 0;
-          padding: 0; }
-          #resume-skills ul.skills-list > li div.skills-content svg {
-            width: 60px;
-            height: 100%; }
-        #resume-skills ul.skills-list > li .skills-desc {
-          margin: 0;
-          font-size: 1rem; }
-    #resume-skills ul.soft-skills > li .skills-desc {
-      margin: 0;
-      padding: 0 25px; }
-      #resume-skills ul.soft-skills > li .skills-desc h4 {
-        font-size: 1.2rem; } }
+    padding: 25px 40px;
+  }
+  #resume-skills h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+  #resume-skills h3 {
+    font-size: 1rem;
+  }
+  #resume-skills h3 i {
+    font-size: 1rem;
+  }
+  #resume-skills ul.skills-list {
+    padding: 0;
+  }
+  #resume-skills ul.skills-list > li {
+    margin: 25px 0 40px 0;
+    padding: 0;
+  }
+  #resume-skills ul.skills-list > li div.skills-content {
+    margin: 0;
+    padding: 0;
+  }
+  #resume-skills ul.skills-list > li div.skills-content svg {
+    width: 60px;
+    height: 100%;
+  }
+  #resume-skills ul.skills-list > li .skills-desc {
+    margin: 0;
+    font-size: 1rem;
+  }
+  #resume-skills ul.soft-skills > li .skills-desc {
+    margin: 0;
+    padding: 0 25px;
+  }
+  #resume-skills ul.soft-skills > li .skills-desc h4 {
+    font-size: 1.2rem;
+  }
+}
 button#scrolltop-button {
   box-shadow: 0px 3px 10px -3px #535353;
   -webkit-box-shadow: 0px 3px 10px -3px #535353;
@@ -252,7 +316,8 @@ button#scrolltop-button {
   right: 50px;
   width: 50px;
   height: 50px;
-  z-index: 100; }
+  z-index: 100;
+}
 
 #resume-footer {
   background-color: #231F20;
@@ -260,69 +325,85 @@ button#scrolltop-button {
   min-height: 300px;
   position: relative;
   width: 100%;
-  z-index: 1; }
-  #resume-footer:after {
-    background: url("./app/assets/bg_pic_3.jpg");
-    background-size: cover;
-    content: "";
-    height: 100%;
-    opacity: 0.4;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: -1; }
-  #resume-footer div.row {
-    width: 100%; }
-  #resume-footer div.footers-card {
-    color: #ffffff;
-    padding: 25px 50px; }
-    #resume-footer div.footers-card h3 {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-      text-align: center;
-      font-size: 1.5rem;
-      font-weight: 500;
-      margin: 0 0 35px 0;
-      text-transform: capitalize; }
-    #resume-footer div.footers-card p {
-      font-size: 0.75rem;
-      font-weight: light;
-      margin: 0;
-      padding: 0;
-      position: relative; }
-      #resume-footer div.footers-card p.skip-line {
-        margin-bottom: 0.8rem; }
-      #resume-footer div.footers-card p i {
-        color: #88f1ff;
-        font-size: 1rem;
-        position: absolute;
-        left: -30px;
-        top: 2px; }
-    #resume-footer div.footers-card a {
-      color: #f5f5f5; }
-      #resume-footer div.footers-card a:hover {
-        text-decoration: none;
-        color: #22e6ff; }
+  z-index: 1;
+}
+#resume-footer:after {
+  background: url("./app/assets/bg_pic_3.jpg");
+  background-size: cover;
+  content: "";
+  height: 100%;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+#resume-footer div.row {
+  width: 100%;
+}
+#resume-footer div.footers-card {
+  color: #ffffff;
+  padding: 25px 50px;
+}
+#resume-footer div.footers-card h3 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 35px 0;
+  text-transform: capitalize;
+}
+#resume-footer div.footers-card p {
+  font-size: 0.75rem;
+  font-weight: light;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#resume-footer div.footers-card p.skip-line {
+  margin-bottom: 0.8rem;
+}
+#resume-footer div.footers-card p i {
+  color: #88f1ff;
+  font-size: 1rem;
+  position: absolute;
+  left: -30px;
+  top: 2px;
+}
+#resume-footer div.footers-card a {
+  color: #f5f5f5;
+}
+#resume-footer div.footers-card a:hover {
+  text-decoration: none;
+  color: #22e6ff;
+}
 
 @media (max-width: 576px) {
   #resume-footer {
-    padding: 0 40px; }
+    padding: 0 40px;
+  }
 
   .footers-card {
-    text-align: center; }
-    .footers-card address i {
-      display: none; } }
+    text-align: center;
+  }
+  .footers-card address i {
+    display: none;
+  }
+}
 #footersfoot {
   background-color: #00bcd4;
   text-align: center;
-  margin: 0; }
-  #footersfoot p {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5rem;
-    vertical-align: middle;
-    color: #f5f5f5;
-    margin: 0;
-    padding: 0; }
+  margin: 0;
+}
+#footersfoot p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  vertical-align: middle;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
 
 /*# sourceMappingURL=main.css.map */
