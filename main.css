@@ -18,7 +18,7 @@ body, html {
   border-bottom: 1px solid rgb0a(0, 0, 0, 0.6);
   font-weight: bold;
   font-size: 1rem;
-  height: 80px;
+  height: 65px;
 }
 #resume-navbar li {
   padding: 0 15px;
@@ -105,13 +105,15 @@ body, html {
 }
 #resume-about .about-area {
   font-size: 1rem;
+  font-weight: 500;
   margin-top: 20px;
-  text-align: justify;
+  text-align: center;
   position: relative;
+  margin: 40px 0 0 0;
 }
 #resume-about .about-area:before {
   color: #cfdbdb;
-  content: "“";
+  content: "❝";
   font-size: 28px;
   height: 25px;
   width: 25px;
@@ -121,7 +123,7 @@ body, html {
 }
 #resume-about .about-area:after {
   color: #cfdbdb;
-  content: "“";
+  content: "❞";
   font-size: 28px;
   height: 25px;
   width: 25px;
@@ -213,6 +215,7 @@ body, html {
 }
 #resume-skills ul.skills-list > li div.skills-content {
   margin: 0 0 0 25px;
+  position: relative;
 }
 #resume-skills ul.skills-list > li div.skills-content .skills-logo {
   display: inline-block;
@@ -221,8 +224,14 @@ body, html {
 }
 #resume-skills ul.skills-list > li div.skills-content .skills-logo svg {
   display: inline-block;
-  width: 150px;
+  width: 100px;
   height: 100%;
+}
+#resume-skills ul.skills-list > li div.skills-content .skills-name {
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-left: 40px;
 }
 #resume-skills ul.skills-list > li div.skills-content .skills-desc {
   margin: 15px 0 0 0;
@@ -242,9 +251,10 @@ body, html {
 }
 #resume-skills ul.skills-list > li div.skills-content .skills-desc p {
   color: #495057;
-  font-size: 0.8rem;
-  line-height: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
   text-align: justify;
+  font-weight: bold;
 }
 
 .invert {
