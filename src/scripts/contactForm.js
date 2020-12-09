@@ -1,16 +1,11 @@
 (function () {
 
-    
-
-    // Functions
-    function checkMail(email, alert) {
-        
-        const regex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-        if ( !regex.test(String(email).toLowerCase()) ) {
-            alert.style.display = 'block';
-            return;
-        } 
-        alert.style.display = 'none';
+    /**
+     * Returns true if a mail is valid
+     */
+    function validateEmail(email) {
+        const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        return regex.test(email);
     }
 
     function cleanData() {
@@ -26,14 +21,13 @@
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        const fullnameVal =  document.getElementById('contact-fullname');
-        const emailVal =  document.getElementById('contact-email');
-        const textVal = document.getElementById('contact-message');
+        const fullnameVal =  document.getElementById('contact-fullname').value;
+        const emailVal =  document.getElementById('contact-email').value;
+        const textVal = document.getElementById('contact-message').value;
 
-
-        console.log(emailVal.value)
-        checkMail(emailVal, document.getElementById('invalid-email') );
-
+        if( !validateEmail(emailVal)) {
+            return;
+        }
     }
 
 
