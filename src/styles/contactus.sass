@@ -1,0 +1,48 @@
+@import '_theming'
+
+    
+#contact-us
+    background: $bg-color-1
+
+    #contact-form
+        input
+            display: block
+            margin-bottom: 25px
+            padding: 6px 12px
+            border: none
+            border-bottom: 2px solid darken($primary-color, 10)
+            width: 50%
+
+            &::placeholder
+                color: $font-color-1
+                font-family: $font-stack
+
+            &:focus
+                outline: none
+
+                &::placeholder
+                    color: transparent
+
+        textarea
+            border: none
+            border-radius: none
+            width: 75%
+            padding: 6px 12px
+            margin-bottom: 25px
+
+            &::placeholder
+                color: $font-color-1
+                font-family: $font-stack
+
+            &:focus
+                outline: none
+
+                &::placeholder
+                    color: transparent
+
+        #envoyer
+            background-color: $primary-color
+            color: #ffffff
+            font-weight: 400
+            border: none
+            
