@@ -5,25 +5,32 @@
     background: $bg-color-1
 
     #contact-form
-        input
-            display: block
-            margin-bottom: 25px
-            padding: 6px 12px
-            border: none
-            border-bottom: 2px solid darken($primary-color, 10)
-            width: 50%
 
-            &::placeholder
-                color: $font-color-1
-                font-family: $font-stack
+        .form-field
+            margin-bottom: 35px
 
-            &:focus
-                outline: none
+            input
+                display: block
+                padding: 6px 12px
+                border: none
+                border-bottom: 2px solid darken($primary-color, 10)
+                width: 50%
 
                 &::placeholder
-                    color: transparent
+                    color: $font-color-1
+                    font-family: $font-stack
+
+                &:focus
+                    outline: none
+
+                    &::placeholder
+                        color: transparent
+
+            #invalid-email
+                color: red
 
         textarea
+            display: block
             border: none
             border-radius: none
             width: 75%

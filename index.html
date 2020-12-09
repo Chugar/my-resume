@@ -225,9 +225,13 @@
             </div>
             <div class="col-lg-6">
               <form id="contact-form" action="">
-                <input type="text" name="fullname" placeholder="Nom et prénom">
-                <input type="text" name="email" placeholder="Email">
-                <textarea name="message" cols="30" rows="7" placeholder="Entrez votre message..."></textarea>
+                <div class="form-field">
+                  <input type="text" id="contact-fullname" name="fullname" placeholder="Nom et prénom">
+                </div>
+                <div class="form-field">
+                  <input type="text" id="contact-email" name="email" placeholder="Email"><small id="invalid-email" style="display:none">* Adresse mail invalide</small>
+                </div>
+                <textarea id="contact-message" name="message" cols="30" rows="5" placeholder="Entrez votre message..."></textarea>
                 <input id="envoyer" type="submit" value="Envoyer">
               </form>
             </div>

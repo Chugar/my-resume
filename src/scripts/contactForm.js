@@ -1,8 +1,16 @@
 (function () {
 
-    // Functions
-    function checkMail() {
+    
 
+    // Functions
+    function checkMail(email, alert) {
+        
+        const regex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        if ( !regex.test(String(email).toLowerCase()) ) {
+            alert.style.display = 'block';
+            return;
+        } 
+        alert.style.display = 'none';
     }
 
     function cleanData() {
@@ -17,11 +25,18 @@
     // Callbacks
     const handleSubmit = (event) => {
         event.preventDefault();
-        const emailVal = event.target.children['email'].value;
-        const fullnameVal = event.target.children['fullname'].value;
-        const textVal = event.target.children['message'].value;
+
+        const fullnameVal =  document.getElementById('contact-fullname');
+        const emailVal =  document.getElementById('contact-email');
+        const textVal = document.getElementById('contact-message');
+
+
+        console.log(emailVal.value)
+        checkMail(emailVal, document.getElementById('invalid-email') );
 
     }
+
+
 
 
     // Event Listener
