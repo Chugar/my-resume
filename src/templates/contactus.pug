@@ -1,7 +1,7 @@
 section(id="contact-us")
     div(class="container") 
 
-        h1 Contact us mofo
+        h2 Contact
     
         div(class="row")
             
@@ -30,15 +30,27 @@ section(id="contact-us")
             //- Right Side
             div(class="col-lg-6")
 
-                form#contact-form(action="")
+                form#contact-form
                     
                     div(class="form-field")
-                        input(type="text", id="contact-fullname", name="fullname", placeholder="Nom et prénom")
+                        
+                        input(
+                            type="text", id="contact-fullname", name="fullname", placeholder="Nom et prénom"
+                            required
+                        )
+                        small#fullname-error
                     
                     div(class="form-field")
-                        input(type="text", id="contact-email", name="email", placeholder="Email")
-                        small#invalid-email(style="display:none") * Adresse mail invalide
+                        
+                        input(
+                            type="text", id="contact-email", name="email", placeholder="Email" 
+                            pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)"
+                            required
+                        )
+                        small#email-error
 
-                    textarea(id="contact-message", name="message", cols="30", rows="5" placeholder="Entrez votre message...")
+                    textarea(id="contact-message", name="message", cols="30", rows="5" placeholder="Entrez votre message..." required)
                     
                     input#envoyer(type="submit" value="Envoyer")
+                    div#loading
+                        div.loader

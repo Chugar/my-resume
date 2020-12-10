@@ -1,8 +1,17 @@
 @import '_theming'
+@import '_loader'
 
     
 #contact-us
     background: $bg-color-1
+    padding: 32px 0
+
+    h2 
+        text-align: center
+        color: $font-color-1
+        font-family: $font-stack
+        font-weight: bold
+        margin-bottom: 25px
 
     #contact-form
 
@@ -26,8 +35,8 @@
                     &::placeholder
                         color: transparent
 
-            #invalid-email
-                color: red
+            small
+                color: $warn-color
 
         textarea
             display: block
@@ -51,5 +60,26 @@
             background-color: $primary-color
             color: #ffffff
             font-weight: 400
+            width: 120px
             border: none
-            
+            padding: 6px 12px
+            margin-left: calc( 37.5% - 60px )
+
+            &:focus
+                outline: none
+
+        #loading
+            display: none
+            position: relative
+            background-color: $primary-color
+            width: 120px
+            padding: 6px 12px
+            margin-left: calc( 37.5% - 60px)
+            height: 35px
+            text-align: center
+            color: #ffffff
+
+            .loader
+                position: absolute
+                top: -5em
+                left: calc(50% - 1em)
