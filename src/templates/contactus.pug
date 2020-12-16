@@ -1,34 +1,43 @@
 section(id="contact-us")
     div(class="container") 
 
-        h2 Contact
+        h2 Me contacter
     
-        div(class="row")
+        div(class="row justify-content-start")
             
             //- Left Side
-            div(class="col-lg-6 left-side")
+            div(class="col-lg-5 left-side")
 
                 div(class="row")
+
                     div(class="col-4 icon")
                         div(class="icon-container")
-                            i(class="fas fa-map-marker")
+                            svg
+                                use(xlink:href="#map-logo")
+
                     div(class="col-8 text")
-                        p Actuellement entre Paris et Nancy
+                        p Actuellement à Paris
                         p Mobile en France
                 
                 div(class="row")
+
                     div(class="col-4 icon")
                         div(class="icon-container")
-                            i(class="fas fa-mobile")
+                            svg
+                                use(xlink:href="#smartphone-logo")
+
                     div(class="col-8 text")
-                        a(href="") 06 52 90 63 21
+                        a(href="tel:+33652906321") 06 52 90 63 21
 
                 div(class="row")
+
                     div(class="col-4 icon")
                         div(class="icon-container")
-                            i(class="fas fa-at")
+                            svg
+                                use(xlink:href="#mail-logo")
+
                     div(class="col-8 text")
-                        a(href="") chiheb.berkane@gmail.com
+                        a(href="mailto:chiheb.berkane@gmail.com") chiheb.berkane(at)gmail
             
             
             //- Right Side
@@ -39,7 +48,7 @@ section(id="contact-us")
                     div(class="form-field")
                         
                         input(
-                            type="text", id="contact-fullname", name="fullname", placeholder="Nom et prénom"
+                            type="text", id="contact-fullname", name="fullname", placeholder="Nom"
                             required
                         )
                         small#fullname-error

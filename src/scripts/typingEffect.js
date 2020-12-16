@@ -4,10 +4,10 @@
 
 const typingZone = document.querySelector('.typing-effect');
 const texts = [
-    'Les Single Page App ',
-    'L\'optimisation du DOM',
-    'La sécurité back-end ',
-    'Les méthodo AGILE'
+    'Tout terrain',
+    'Dev agile',
+    'Clean coder ',
+    'Language agnostic '
 ];
 
 let letter;
