@@ -35,12 +35,8 @@
                         visibility: visible
                         content: "Fear"
                         
-
                 &:focus
                     outline: none
-
-                    &::placeholder
-                        color: transparent
 
             small
                 color: $warn-color
@@ -57,14 +53,11 @@
 
 
             &::placeholder
-                color: $font-color-1
+                color: lighten($font-color-1, 15)
                 font-family: $font-stack
 
             &:focus
                 outline: none
-
-                &::placeholder
-                    color: transparent
 
         #envoyer
             background-color: $primary-color

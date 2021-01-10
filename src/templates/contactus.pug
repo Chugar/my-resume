@@ -9,7 +9,6 @@ section(id="contact-us")
                 form#contact-form
                     
                     div(class="form-field")
-                        
                         input(
                             type="text", id="contact-fullname", name="fullname", placeholder="Nom"
                             required
@@ -17,7 +16,6 @@ section(id="contact-us")
                         small#fullname-error
                     
                     div(class="form-field")
-                        
                         input(
                             type="text", id="contact-email", name="email", placeholder="Email" 
                             pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)"
@@ -25,7 +23,12 @@ section(id="contact-us")
                         )
                         small#email-error
 
-                    textarea(id="contact-message", name="message", cols="30", rows="5" placeholder="Entrez votre message..." required)
+                    textarea(
+                        id="contact-message", 
+                        name="message", 
+                        cols="30", rows="5" 
+                        placeholder="Message" required
+                    )
                     
                     input#envoyer(type="submit" value="Envoyer")
                     div#loading
