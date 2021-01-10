@@ -15,57 +15,8 @@
         margin-bottom: 45px
 
 
-    $circle-size: 75px
-    .left-side 
-        background-color: #0093E9
-        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)
-        padding: 20px
-        box-shadow: $shadow
-        
-        > .row
-            margin: 0 auto
-            height: 100px
-            display: flex
-            align-items: center
-
-            .icon 
-                width: 100%
-                display: flex
-                justify-content: flex-end
-
-                .icon-container 
-                    position: relative
-                    background-color: $bg-color-1
-                    height: $circle-size
-                    width:  $circle-size
-                    border-radius: 50%
-                    box-shadow: $shadow
-
-                    svg
-                        position: absolute
-                        width: 50px
-                        height: 50px 
-                        left: calc(50% - 25px)
-                        top: calc(50% - 25px)
-
-            .text
-                display: flex
-                flex-direction: column
-                justify-content: start
-                font-weight: 400
-                font-size: 1.1em
-
-                p 
-                    margin-bottom: 0
-
-                a 
-                    color: $font-color-1
-                    &:hover
-                        text-decoration: none
-
-
+    $circle-size: 60px
     #contact-form
-
         .form-field
             margin-bottom: 35px
 
@@ -74,7 +25,7 @@
                 padding: 6px 12px
                 border: none
                 border-bottom: 2px solid darken($primary-color, 10)
-                width: 70%
+                width: 100%
 
                 &::placeholder
                     color: lighten($font-color-1, 15)
@@ -98,7 +49,7 @@
             display: block
             border: none
             border-radius: none
-            width: 85%
+            width: 100%
             padding: 6px 12px
             margin-bottom: 25px
             resize: none
@@ -117,12 +68,13 @@
 
         #envoyer
             background-color: $primary-color
+            display: block
             color: #ffffff
             font-weight: 400
             width: 120px
             border: none
             padding: 6px 12px
-            margin-left: calc( 37.5% - 60px )
+            margin: 0 auto
 
             &:focus
                 outline: none
